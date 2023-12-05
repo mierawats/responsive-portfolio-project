@@ -1,7 +1,9 @@
-/*font-family: 'Alumni Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Suez One', serif;*/
+:root {
+  --primary-font-family: "Alumni Sans", sans-serif;
+  --primary-font-color: #142d4c;
+  --secondary-font-color: #385170;
+  --decoration-color: #9fd3c7;
+}
 
 body {
   background-color: #ececec;
@@ -13,8 +15,8 @@ body {
   left: 12px;
   width: 180px;
   height: 200px;
-  border-top: 5px solid #9fd3c7;
-  border-left: 5px solid #9fd3c7;
+  border-top: 5px solid var(--decoration-color);
+  border-left: 5px solid var(--decoration-color);
 }
 
 .column {
@@ -26,7 +28,7 @@ body {
   position: sticky;
   left: 100%;
   width: 180px;
-  border-top: 5px solid #9fd3c7;
+  border-top: 5px solid var(--decoration-color);
 }
 
 .headings {
@@ -43,17 +45,32 @@ body {
 
 h1 {
   font-size: 80px;
-  font-family: "Alumni Sans", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: bolder;
   line-height: 0;
-  color: #385170;
+  color: var(--secondary-font-color);
 }
 
 h2 {
   font-size: 190px;
-  font-family: "Alumni Sans", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: bold;
   line-height: 200px;
   margin-bottom: 0;
-  color: #142d4c;
+  color: var(--primary-font-color);
+}
+
+ul li {
+  font-family: var(--primary-font-family);
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: 50px;
+  border-top: 1px solid var(--decoration-color);
+  color: red;
+}
+
+footer {
+  font-family: "Suez One", serif;
+  opacity: 0.8;
+  color: var(--secondary-font-color);
 }
