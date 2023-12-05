@@ -71,6 +71,18 @@ ul li {
 
 footer {
   font-family: "Suez One", serif;
-  opacity: 0.8;
-  color: var(--secondary-font-color);
+  color: rgba(56, 81, 112, 0.6);
+  margin-top: 20px;
+}
+
+footer a {
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+
+.bottom-line {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 180px;
+  border-bottom: 5px solid var(--decoration-color);
 }
