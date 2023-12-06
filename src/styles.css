@@ -10,7 +10,7 @@ body {
 }
 
 .corner-frame {
-  position: sticky;
+  position: relative;
   top: 12px;
   left: 12px;
   width: 180px;
@@ -70,28 +70,35 @@ h2 {
   color: red;
 }
 
-.section-one {
+.section-one,
+.section-two,
+.section-three {
   font-family: var(--primary-font-family);
-  margin-top: -275px;
+}
+
+.section-one {
   margin: -275px auto 80px auto;
 }
 
 .section-two {
   text-align: center;
-  font-family: var(--primary-font-family);
   margin: 50px 0 0 80px;
+}
+
+.section-three {
+  margin: 150px 30px 100px 30px;
 }
 
 .section-one h2,
 .section-two h2,
 .section-three h2 {
-  font-size: 80px;
+  font-size: 85px;
   line-height: 100px;
 }
 
 .section-one p,
 .section-two p {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   color: var(--secondary-font-color);
 }
@@ -100,6 +107,13 @@ h2 {
   display: block;
   width: 28%;
   border-radius: 12px;
+}
+
+.card {
+  color: var(--secondary-font-color);
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  border: 1px solid var(--decoration-color);
+  border-radius: 10px;
 }
 
 footer {
