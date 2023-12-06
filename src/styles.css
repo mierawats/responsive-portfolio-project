@@ -157,4 +157,8 @@ footer a {
     line-height: 70px;
     text-align: center;
   }
+
+  footer {
+    font-size: 12px;
+  }
 }
