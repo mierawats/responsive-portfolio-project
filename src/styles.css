@@ -125,6 +125,26 @@ h2 {
   border-radius: 10px;
 }
 
+.work-page {
+  margin-top: -115px;
+}
+
+.work-page h1 {
+  color: var(--primary-font-color);
+}
+
+.work-page h2 {
+  color: var(--secondary-font-color);
+  font-size: 30px;
+  line-height: 2;
+}
+
+.work-page img {
+  display: block;
+  margin: 0 auto 10px;
+  border: 5px solid var(--decoration-color);
+}
+
 footer {
   font-family: "Suez One", serif;
   color: rgba(56, 81, 112, 0.6);
@@ -215,6 +235,11 @@ footer a {
     margin: 0 auto;
     width: 65%;
   }
+
+  .work-page h1 {
+    font-size: 40px;
+    margin: 40px 70px 10px !important;
+  }
 }
 
 /* For medium-sized screens (e.g., tablets) */
@@ -302,5 +327,10 @@ footer a {
     display: block;
     margin: 0 auto;
     width: 65%;
+  }
+
+  .work-page h1 {
+    font-size: 60px;
+    margin: 40px 70px 10px !important;
   }
 }
