@@ -23,24 +23,37 @@ body {
   border-top: 5px solid var(--decoration-color);
 }
 
-.headings {
-  margin: -200px 0 0 180px;
-  text-align: start;
+.container {
+  margin-bottom: 100px;
+  max-height: 400px;
 }
 
-.profile-pic {
-  display: block;
-  width: 25%;
-  margin: -140px 0px 0px 885px;
+.container .card {
+  max-width: 80%;
+  position: relative;
+  top: -60%;
+  left: 100%;
+}
+
+.container .card img {
   border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  width: 200%;
+  position: relative;
+  margin: -480px 60px 0;
+  text-align: start;
 }
 
 h1 {
   font-size: 80px;
   font-family: var(--primary-font-family);
   font-weight: bolder;
-  line-height: 0;
-  margin-bottom: 0;
+  line-height: 1;
+  margin: 0;
   color: var(--secondary-font-color);
 }
 
@@ -48,8 +61,8 @@ h2 {
   font-size: 190px;
   font-family: var(--primary-font-family);
   font-weight: bold;
-  line-height: 200px;
-  margin-bottom: 0;
+  line-height: 150px;
+  margin: 0;
   color: var(--primary-font-color);
 }
 
@@ -126,7 +139,8 @@ footer a {
   border-bottom: 5px solid var(--decoration-color);
 }
 
-@media (max-width: 575.98px) {
+/* For small screens (e.g., mobile phones) */
+@media screen and (max-width: 575.98px) {
   .corner-frame {
     width: 45px;
     height: 50px;
@@ -138,14 +152,18 @@ footer a {
     width: 45px;
     border-top: 5px solid var(--decoration-color);
   }
-  .profile-pic {
+
+  .container .card,
+  .container .card img {
     display: none;
   }
 
-  .headings {
-    display: block;
-    margin: -10px;
+  .text-overlay {
+    width: 100%;
+    position: relative;
+    margin: 0;
   }
+
   h1 {
     font-size: 40px;
     text-align: center;
@@ -156,6 +174,62 @@ footer a {
     font-size: 80px;
     line-height: 70px;
     text-align: center;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+/* For medium-sized screens (e.g., tablets) */
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+  .corner-frame {
+    width: 75px;
+    height: 70px;
+    border-top: 4px solid var(--decoration-color);
+    border-left: 4px solid var(--decoration-color);
+  }
+
+  .corner-lines {
+    width: 75px;
+    border-top: 5px solid var(--decoration-color);
+  }
+
+  .container {
+    margin-bottom: 50px;
+    max-height: 80px;
+  }
+
+  .container .card {
+    max-width: 65%;
+    position: relative;
+    top: -30%;
+    left: 115%;
+  }
+
+  .container .card img {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+  }
+
+  .text-overlay {
+    width: 150%;
+    position: relative;
+    margin: 0;
+    bottom: 68%;
+    left: 20%;
+  }
+
+  h1 {
+    font-size: 40px;
+
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 80px;
+    line-height: 70px;
   }
 
   footer {
