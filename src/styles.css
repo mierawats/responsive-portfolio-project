@@ -145,6 +145,29 @@ h2 {
   border: 5px solid var(--decoration-color);
 }
 
+.contact-page {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.contact-page h1 {
+  font-size: 60px;
+}
+
+.email {
+  font-family: var(--primary-font-family);
+  font-size: 100px;
+  font-weight: bold;
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+
+.email:hover {
+  color: var(--secondary-font-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 footer {
   font-family: "Suez One", serif;
   color: rgba(56, 81, 112, 0.6);
@@ -174,7 +197,8 @@ footer a {
 
   .corner-lines {
     width: 45px;
-    border-top: 5px solid var(--decoration-color);
+    margin: -4px 5px 0 0;
+    border-top: 3px solid var(--decoration-color);
   }
 
   .container .card,
@@ -198,10 +222,6 @@ footer a {
     font-size: 80px;
     line-height: 70px;
     text-align: center;
-  }
-
-  footer {
-    font-size: 12px;
   }
 
   .section-one {
@@ -239,6 +259,22 @@ footer a {
   .work-page h1 {
     font-size: 40px;
     margin: 40px 70px 10px !important;
+  }
+
+  .contact-page {
+    margin-top: 15px;
+  }
+
+  .contact-page h1 {
+    font-size: 20px;
+  }
+
+  .email {
+    font-size: 28px;
+  }
+
+  footer {
+    font-size: 12px;
   }
 }
 
@@ -293,10 +329,6 @@ footer a {
     line-height: 70px;
   }
 
-  footer {
-    font-size: 12px;
-  }
-
   .section-one {
     margin: auto 35px;
   }
@@ -332,5 +364,21 @@ footer a {
   .work-page h1 {
     font-size: 60px;
     margin: 40px 70px 10px !important;
+  }
+
+  .contact-page {
+    margin-top: 15px;
+  }
+
+  .contact-page h1 {
+    font-size: 40px;
+  }
+
+  .email {
+    font-size: 60px;
+  }
+
+  footer {
+    font-size: 15px;
   }
 }
