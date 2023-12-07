@@ -33,6 +33,7 @@ body {
   position: relative;
   top: -60%;
   left: 100%;
+  border-radius: 12px;
 }
 
 .container .card img {
@@ -70,9 +71,15 @@ h2 {
   font-family: var(--primary-font-family);
   font-weight: bold;
   font-size: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 50px;
   border-top: 1px solid var(--decoration-color);
   color: red;
+}
+
+.about-page {
+  margin-top: -98px;
 }
 
 .section-one,
@@ -82,16 +89,16 @@ h2 {
 }
 
 .section-one {
-  margin: -135px auto 80px auto;
+  margin: auto 50px;
 }
 
 .section-two {
   text-align: center;
-  margin: 50px 0 0 80px;
+  margin: 50px 0 0;
 }
 
 .section-three {
-  margin: 150px 30px 35px 30px;
+  margin: 75px 30px 35px 30px;
 }
 
 .section-one h2,
@@ -103,21 +110,18 @@ h2 {
 
 .section-one p,
 .section-two p {
+  padding: 0 125px;
   font-size: 22px;
   font-weight: 500;
   color: var(--secondary-font-color);
 }
 
-.intro-pic {
-  display: block;
-  width: 28%;
+.section-one img {
+  width: 65%;
   border-radius: 12px;
 }
 
-.card {
-  color: var(--secondary-font-color);
-  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
-  border: 1px solid var(--decoration-color);
+.about-p .card {
   border-radius: 10px;
 }
 
@@ -179,10 +183,42 @@ footer a {
   footer {
     font-size: 12px;
   }
+
+  .section-one {
+    margin: auto 25px;
+  }
+
+  .section-two {
+    text-align: center;
+    margin: 25px 0 0;
+  }
+
+  .section-three {
+    margin: 25px 15px 28px 15px;
+  }
+
+  .section-one h2,
+  .section-two h2,
+  .section-three h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .section-one p,
+  .section-two p {
+    padding: 0 75px;
+    font-size: 12px;
+  }
+
+  .section-one img {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+  }
 }
 
 /* For medium-sized screens (e.g., tablets) */
-@media screen and (min-width: 576px) and (max-width: 991.98px) {
+@media screen and (min-width: 576px) and (max-width: 1050px) {
   .corner-frame {
     width: 75px;
     height: 70px;
@@ -234,5 +270,37 @@ footer a {
 
   footer {
     font-size: 12px;
+  }
+
+  .section-one {
+    margin: auto 35px;
+  }
+
+  .section-two {
+    text-align: center;
+    margin: 35px 0 0;
+  }
+
+  .section-three {
+    margin: 35px 25px 32px 25px;
+  }
+
+  .section-one h2,
+  .section-two h2,
+  .section-three h2 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .section-one p,
+  .section-two p {
+    padding: 0 85px;
+    font-size: 18px;
+  }
+
+  .section-one img {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
   }
 }
