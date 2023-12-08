@@ -145,6 +145,16 @@ h2 {
   border: 5px solid var(--decoration-color);
 }
 
+.work-page a {
+  color: var(--secondary-font-color);
+  text-decoration: none;
+}
+
+.work-page a:hover {
+  color: var(--primary-font-color);
+  text-decoration: underline;
+}
+
 .contact-page {
   text-align: center;
   margin-top: 15px;
@@ -205,6 +215,11 @@ footer a {
   font-size: 50px;
   text-decoration: none;
   color: var(--primary-font-color);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: var(--secondary-font-color);
 }
 
 .footer .social-links a {
